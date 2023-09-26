@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df00960d-a4c3-40e9-8ccd-a97afee4e65b" name="Changes" comment="" />
+    <list default="true" id="df00960d-a4c3-40e9-8ccd-a97afee4e65b" name="Changes" comment="fidele parser">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evp.py" beforeDir="false" afterPath="$PROJECT_DIR$/evp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evp.yml" beforeDir="false" afterPath="$PROJECT_DIR$/evp.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feo.py" beforeDir="false" afterPath="$PROJECT_DIR$/feo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/feo.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kerch.py" beforeDir="false" afterPath="$PROJECT_DIR$/kerch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kerch.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kerch.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sev.py" beforeDir="false" afterPath="$PROJECT_DIR$/sev.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simf.py" beforeDir="false" afterPath="$PROJECT_DIR$/simf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simf.yml" beforeDir="false" afterPath="$PROJECT_DIR$/simf.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yalta.py" beforeDir="false" afterPath="$PROJECT_DIR$/yalta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yalta.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yalta.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +57,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.run_all">
     <configuration name="delite_999_categoryID" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="my_yandex_yml" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,27 +92,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evp.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="feo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="my_yandex_yml" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/feo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,7 +142,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="yalta" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="run_all" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="my_yandex_yml" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -161,7 +154,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yalta.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_all.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="simf" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="my_yandex_yml" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run_all" />
+        <item itemvalue="Python.simf" />
         <item itemvalue="Python.delite_999_categoryID" />
         <item itemvalue="Python.evp" />
         <item itemvalue="Python.kerch" />
-        <item itemvalue="Python.feo" />
-        <item itemvalue="Python.yalta" />
       </list>
     </recent_temporary>
   </component>
@@ -189,6 +203,14 @@
       <option name="presentableId" value="Default" />
       <updated>1678189209431</updated>
     </task>
+    <task id="LOCAL-00001" summary="fidele parser">
+      <created>1691404144658</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691404144658</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +223,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fidele parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="fidele parser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

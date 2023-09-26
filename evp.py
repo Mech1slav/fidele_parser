@@ -1,5 +1,6 @@
 import arrow
 import time
+import re
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
@@ -276,6 +277,7 @@ def scrape_website(url):
         div_description = []
         produt_name = []
         links = []
+        price = []
         img_links = []
         last_digits_list = []
         cat_slug = []
@@ -290,6 +292,8 @@ def scrape_website(url):
                 links_soup = card['href']
                 links.append(links_soup)  # ссылка на товар
 
+                price.append(card.find('div', {'class': 'product-price'})) # цена
+
                 img = card.find('img')
                 img_links.append(img['src'])  # ссылка на картинку
 
@@ -298,7 +302,7 @@ def scrape_website(url):
                 cat_id = card.find('meta', {'itemprop': 'description'})
                 cat_slug.append(cat_id['content'])
 
-        return last_digits_list, produt_name, links, div_description, img_links, cat_slug
+        return last_digits_list, produt_name, links, div_description, img_links, cat_slug, price
 
     except Exception as e:
         print(f"Ошибка: {e}")
@@ -313,10 +317,10 @@ if __name__ == "__main__":
 
     created_ids = {}
 
-    last_digits_list, produt_name, links, div_description, img_links, cat_slug = scrape_website(target_url)
+    last_digits_list, produt_name, links, div_description, img_links, cat_slug, price = scrape_website(target_url)
 
-    if last_digits_list and produt_name and div_description and img_links and links and cat_slug:
-        for lq, n, d, im, lks, c in zip(last_digits_list, produt_name, div_description, img_links, links, cat_slug):
+    if last_digits_list and produt_name and div_description and img_links and links and cat_slug and price:
+        for lq, n, d, im, lks, c, p in zip(last_digits_list, produt_name, div_description, img_links, links, cat_slug, price):
 
             offer_id = None
             for numb in lq:
@@ -359,6 +363,17 @@ if __name__ == "__main__":
             lks_el = ET.Element("url")
             lks_el.text = domain + links
             offer.append(lks_el)
+
+            price = p
+            price_int = []
+            for item in price:
+                match = re.search(r'\d+', item)
+                if match:
+                    price_int.append(str(int(match.group())))
+            numeric_values = ', '.join(price_int)  # массив в строку с разделителем
+            p_price = ET.Element("price")
+            p_price.text = numeric_values
+            offer.append(p_price)
 
             currencys = ET.Element("currencyId")
             currencys.text = "RUR"
